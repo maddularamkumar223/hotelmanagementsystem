@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./rejistration.css" />
+    <link rel="stylesheet" href="../navbar/navbar.css" />
+    <link rel="stylesheet" href="../bootstrap/bootstrap.css" />
+  </head>
+  <body>
+    <main>
+      <nav class="nav_container"></nav>
+      <section>
+        <h1>Registration Page</h1>
+        <form action="" class="row">
+          <aside class="col-12 col-md-6">
+            <label for="name">Name</label>
+            <input type="text" placeholder="Enter your name" name="name" />
+          </aside>
+          <aside class="col-12 col-md-6">
+            <label for="email">Email</label>
+            <input type="email" placeholder="Enter your email" name="email" />
+          </aside>
+          <aside class="col-12 col-md-6">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              placeholder="Enter Your password"
+              name="password"
+            />
+          </aside>
+          <aside class="col-12 col-md-6">
+            <label for="comfirmPassword">Confirm Password</label>
+            <input
+              type="password"
+              placeholder="Enter your password"
+              name="confirmPassword"
+            />
+          </aside>
+          <aside class="col-12 col-md-6">
+            <label for="gender">Gender</label>
+            <input type="radio" name="gender" value="male" id="" />Male
+            <input type="radio" name="gender" value="female" id="" />Female
+            <input type="radio" name="gender" value="other" id="" />Other
+          </aside>
+          <aside class="col-12 col-md-6">
+            <label for="mobileNo">Mobile No</label>
+            <input
+              type="tel"
+              placeholder="Enter your mobile no"
+              name="mobileNo"
+            />
+          </aside>
+          <aside class="col-12 text-center">
+            <button>Submit</button>
+          </aside>
+          <p class="col-12 text-center">
+            If you have account <a href="../login/login.html">Log In</a>
+          </p>
+        </form>
+      </section>
+    </main>
+
+    <script src="../navbar/navbar.js"></script>
+    <script src="./registration.js"></script>
+    <script src="../bootstrap/bootstrap.js"></script>
+  </body>
+</html>

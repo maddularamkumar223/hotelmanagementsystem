@@ -1,0 +1,55 @@
+main {
+  height: 100vh;
+}
+
+.nav_container {
+  height: 10%;
+}
+
+section {
+  border: solid red;
+  height: 90%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  flex-direction: column;
+}
+
+form {
+  border: solid;
+  width: 70%;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+form input {
+  width: 80%;
+  border-radius: 20px;
+  padding: 5px 20px;
+}
+
+form [name="gender"] {
+  width: 20px;
+}
+
+form button {
+  margin: 20px;
+  width: 50%;
+  border-radius: 20px;
+  padding: 5px 15px;
+  background-color: navy;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}

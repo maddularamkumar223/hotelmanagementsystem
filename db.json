@@ -1,0 +1,22 @@
+{
+  "users": [
+    {
+      "id": "90f5",
+      "name": "Ram",
+      "email": "ram@gmail.com",
+      "password": "123456",
+      "mobileNo": "1234567890",
+      "gender": "male"
+    },
+    {
+      "id": "d45d",
+      "name": "",
+      "email": "",
+      "password": "",
+      "mobileNo": "",
+      "gender": null
+    }
+  ],
+  "hotels": [],
+  "bookings": []
+}

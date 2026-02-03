@@ -65,7 +65,7 @@ let profileDetails = [
   },
   {
     name: "sign Up",
-    path: "#",
+    path: "../registration/registration.html",
   },
   {
     name: "login",
@@ -81,11 +81,16 @@ nav_container.append(logo_block, navigation_block, profile_block);
 
 // ! Logout Logic
 
-let token = false;
+let token = localStorage.getItem("id");
 
 let login = document.querySelector(".login");
 let signUp = document.querySelector(".sign");
 let logout_button = document.querySelector(".logout");
+
+logout_button.addEventListener("click", () => {
+  localStorage.removeItem("id");
+  location.reload();
+});
 if (token) {
   login.style.display = "none";
   signUp.style.display = "none";
