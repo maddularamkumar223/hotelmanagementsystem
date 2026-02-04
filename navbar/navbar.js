@@ -37,7 +37,7 @@ let createNavbar = (data, container_name) => {
 let navigation_Details = [
   {
     name: "home",
-    path: "#",
+    path: "../homePage/index.html",
   },
   {
     name: "booking",
@@ -52,8 +52,8 @@ let navigation_Details = [
     path: "#",
   },
   {
-    name: "about Us",
-    path: "#",
+    name: "Add Hotel Room",
+    path: "../addHotelRoom/addingHotelRoom.html",
   },
 ];
 createNavbar(navigation_Details, navigation_block);
