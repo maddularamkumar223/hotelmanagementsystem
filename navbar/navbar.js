@@ -69,7 +69,7 @@ let profileDetails = [
   },
   {
     name: "login",
-    path: "#",
+    path: "../login/login.html",
   },
   {
     name: "logout",

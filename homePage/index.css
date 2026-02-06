@@ -1,5 +1,6 @@
 section {
   padding: 40px;
+  width: 100%;
 }
 section img {
   height: 50%;
@@ -34,4 +35,52 @@ article button {
 article button:hover {
   background-color: navy;
   color: white;
+}
+
+.booking_form {
+  height: 500px;
+  width: 50%;
+  border: solid;
+  position: absolute;
+  top: 10%;
+  left: 30%;
+  background-color: black;
+  color: white;
+  font-size: 24px;
+  border-radius: 20px;
+  .crossSymbol {
+    border: solid;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+  }
+  .crossSymbol:hover {
+    background-color: red;
+    color: white;
+  }
+  label {
+    color: white;
+    display: block;
+    margin-top: 10px;
+    text-transform: capitalize;
+  }
+  input {
+    color: white;
+    background-color: transparent;
+  }
+
+  button {
+    border: solid white;
+  }
+}
+
+span {
+  text-transform: capitalize;
 }

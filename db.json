@@ -35,5 +35,16 @@
       "roomStatus": "Not Available"
     }
   ],
-  "bookings": []
+  "bookings": [
+    {
+      "id": "f60c",
+      "userId": "90f5",
+      "roomNo": "101",
+      "roomType": "singleRoom",
+      "roomPrice": "1200",
+      "name": "Aravind",
+      "checkIn": "2026-02-06",
+      "checkOut": "2026-02-15"
+    }
+  ]
 }
