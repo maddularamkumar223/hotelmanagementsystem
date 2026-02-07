@@ -61,7 +61,7 @@ createNavbar(navigation_Details, navigation_block);
 let profileDetails = [
   {
     name: "my Bookings",
-    path: "#",
+    path: "../myBooking/displayBooking.html",
   },
   {
     name: "sign Up",

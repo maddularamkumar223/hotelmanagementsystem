@@ -21,7 +21,7 @@ let rooms = async () => {
     roomType.innerHTML = `Room Type : ${room.roomType}`;
     status.innerHTML = `Status: ${room.roomStatus}`;
 
-    if (room.roomStatus === "Available") {
+    if (room.roomStatus === "Available" && localStorage.getItem("id")) {
       status.style.color = "green";
       bookRoom.addEventListener("click", () => {
         popUp("block", room);
@@ -120,6 +120,7 @@ let popUp = (value, data) => {
       checkOut: formData.get("check out"),
     };
     addBooking(detailsForm);
+    updateRoomData(data.id);
     alert("Your Booking is Confirmed");
   });
 
@@ -138,5 +139,15 @@ let addBooking = async (value) => {
       "content-type": "application/json",
     },
     body: JSON.stringify(value),
+  });
+};
+
+let updateRoomData = async (id) => {
+  await fetch(`http://localhost:3000/hotelsRooms/${id}`, {
+    method: "PATCH",
+    headers: {
+      "content-type": "application/json",
+    },
+    body: JSON.stringify({ roomStatus: "Unavailable" }),
   });
 };
